@@ -1,3 +1,5 @@
+# Kennedy Portfolio
+
 ## Vercel deployment
 
 Production portfolio data, admin state, and contact messages are stored in Supabase. Uploaded images are stored in a public Supabase Storage bucket. Local development continues to use the JSON files and `public/uploads`.
