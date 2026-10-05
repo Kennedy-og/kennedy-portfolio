@@ -1,0 +1,29 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="28" fill="#F5F1EA"/>
+  <rect x="70" y="82" width="1060" height="636" rx="24" fill="#F9F7F4" stroke="#E7DED1" stroke-width="2"/>
+  <rect x="110" y="128" width="260" height="82" rx="14" fill="#201F1E"/>
+  <text x="146" y="178" fill="#F8F3EE" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">SUPERMARKET</text>
+  <rect x="104" y="240" width="230" height="330" rx="18" fill="#EFE6DC"/>
+  <rect x="380" y="240" width="690" height="98" rx="18" fill="#FBF8F4" stroke="#E8DED3"/>
+  <rect x="380" y="356" width="330" height="214" rx="18" fill="#FBF8F4" stroke="#E8DED3"/>
+  <rect x="740" y="356" width="330" height="214" rx="18" fill="#FBF8F4" stroke="#E8DED3"/>
+  <path d="M430 312H994" stroke="#C8B5A2" stroke-width="10" stroke-linecap="round"/>
+  <path d="M430 282H760" stroke="#D8C8B7" stroke-width="10" stroke-linecap="round"/>
+  <rect x="156" y="290" width="128" height="12" rx="6" fill="#D0B79E"/>
+  <rect x="156" y="318" width="98" height="12" rx="6" fill="#D0B79E"/>
+  <rect x="156" y="346" width="132" height="12" rx="6" fill="#D0B79E"/>
+  <rect x="140" y="440" width="180" height="18" rx="9" fill="#201F1E" opacity="0.9"/>
+  <rect x="154" y="487" width="152" height="18" rx="9" fill="#D19D68"/>
+  <rect x="154" y="540" width="142" height="18" rx="9" fill="#C9B39E"/>
+  <rect x="400" y="386" width="260" height="130" rx="14" fill="#F0E0D0"/>
+  <rect x="770" y="386" width="250" height="130" rx="14" fill="#EEDCC3"/>
+  <path d="M448 488C500 438 546 430 575 470C615 518 661 510 698 448" stroke="#201F1E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M820 488C854 450 890 442 918 468C954 500 986 500 1010 464" stroke="#201F1E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="515" cy="424" r="10" fill="#D98C3B"/>
+  <circle cx="832" cy="426" r="10" fill="#D98C3B"/>
+  <circle cx="610" cy="442" r="10" fill="#D98C3B"/>
+  <circle cx="908" cy="448" r="10" fill="#D98C3B"/>
+  <rect x="101" y="650" width="332" height="22" rx="11" fill="#201F1E" opacity="0.12"/>
+  <rect x="480" y="650" width="180" height="22" rx="11" fill="#201F1E" opacity="0.12"/>
+  <rect x="702" y="650" width="266" height="22" rx="11" fill="#201F1E" opacity="0.12"/>
+</svg>

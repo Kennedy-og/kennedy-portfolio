@@ -1,0 +1,199 @@
+{
+  "profile": {
+    "name": "Kennedy",
+    "title": "Data Analyst",
+    "headline": "I turn data into decisions.",
+    "bio": "",
+    "location": "Nigeria, Ibadan",
+    "email": "kennedyogundipe01@gmail.com",
+    "phone": "",
+    "availability": "Available for data and reporting work",
+    "photo": "/images/headshot.webp",
+    "heroPhoto": "/uploads/profile/1790701426365-WhatsApp-Image-2026-09-26-at-18.40.28.jpeg"
+  },
+  "contact": {
+    "email": "kennedyogundipe01@gmail.com",
+    "phone": "08084891060",
+    "location": "Nigeria, Ibadan",
+    "resumeUrl": "/kennedy-resume.pdf",
+    "linkedin": "",
+    "github": "https://github.com/Kennedy-og",
+    "x": "https://x.com/kex_crypt",
+    "whatsapp": "https://wa.me/2348084891060"
+  },
+  "socialLinks": [
+    {
+      "label": "Email",
+      "url": "mailto:kennedyogundipe01@gmail.com"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/kex_crypt"
+    },
+    {
+      "label": "WhatsApp",
+      "url": "https://wa.me/2348084891060"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Analysis & Modeling",
+      "items": [
+        "SQL",
+        "Python",
+        "pandas",
+        "Data Cleaning",
+        "Exploratory Analysis"
+      ]
+    },
+    {
+      "category": "Visualization & Storytelling",
+      "items": [
+        "Power BI",
+        "Tableau",
+        "Streamlit",
+        "Dashboard Design",
+        "Business Communication"
+      ]
+    },
+    {
+      "category": "Problem Solving",
+      "items": [
+        "Decision Support",
+        "KPI Thinking",
+        "Operational Review",
+        "Stakeholder Framing",
+        "Reporting"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "ofm-operations-dashboard",
+      "title": "OFM Operations Dashboard",
+      "summary": "Operational reporting workflow for KPI tracking and decision support.",
+      "description": "A live operations dashboard reading from a Google Sheet, processed with pandas, and visualized in Streamlit.",
+      "category": "Operations Analytics",
+      "status": "Completed",
+      "featured": true,
+      "published": true,
+      "date": "2025-04-01",
+      "tools": [
+        "Python",
+        "pandas",
+        "Streamlit",
+        "Data Cleaning"
+      ],
+      "githubUrl": "https://github.com/Kennedy-og/ofm-operations-dashboard",
+      "liveUrl": "https://ofm-operations-dashboard-fhmbnnn7lhbftrgxjhcur7.streamlit.app/",
+      "problem": "The operational team needed a simpler way to monitor performance and spot issues without manually reviewing weekly reporting data.",
+      "approach": "I cleaned the source data, structured the KPIs, and built a live dashboard flow that translated messy operational data into clear decision-ready visuals.",
+      "outcome": "The final workflow made reporting easier to interpret and gave stakeholders a faster way to identify trends and take action.",
+      "image": "/uploads/projects/1790891348960-1790699995751-Screenshot-2026-09-29-173844.webp"
+    },
+    {
+      "id": "supermarket-operations-dashboard",
+      "title": "Supermarket Operations Dashboard",
+      "summary": "Store performance dashboard with operational trend tracking.",
+      "description": "A retail analytics case study focused on store performance, customer traffic, and operational trend analysis.",
+      "category": "Retail Performance",
+      "status": "Completed",
+      "featured": false,
+      "published": true,
+      "date": "2025-02-15",
+      "tools": [
+        "Excel",
+        "SQL",
+        "Dashboarding",
+        "Reporting"
+      ],
+      "githubUrl": "",
+      "liveUrl": "",
+      "problem": "Store-level performance data was difficult to compare across time periods, and patterns were not obvious without a consistent view of the business.",
+      "approach": "I consolidated the data, reviewed performance indicators across stores, and organized the analysis around operational decision-making rather than raw numbers alone.",
+      "outcome": "The dashboard created a clearer view of performance drivers and supported more confident operational review and reporting.",
+      "image": "/uploads/projects/1790890695521-Dashboard-Snapshot.png"
+    },
+    {
+      "id": "uae-ecommerce-analysis",
+      "title": "Airbnb-Out-Sales-Dashboard",
+      "summary": "Customer and product analysis covering behavior, engagement, and performance.",
+      "description": "A consumer behavior analysis exploring engagement, product performance, and customer trends within a digital commerce context.",
+      "category": "Consumer Behavior",
+      "status": "Completed",
+      "featured": false,
+      "published": true,
+      "date": "2024-12-10",
+      "tools": [
+        "Python",
+        "Visualization",
+        "Exploration",
+        "Insights"
+      ],
+      "githubUrl": "https://github.com/Kennedy-og/Airbnb-Out-Sales-Dashboard",
+      "liveUrl": "",
+      "problem": "The business needed to understand which customer and product behaviors were most meaningful before making recommendations or planning next steps.",
+      "approach": "I explored the data by segment, product, and pattern to find where demand and engagement were strongest and where the story was less clear.",
+      "outcome": "The analysis surfaced the most actionable customer and product trends and gave the business a clearer frame for future decisions.",
+      "image": "/uploads/projects/1790439386589-521260430-666f7728-4600-4712-86a7-883d13e4544e.png"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Data Analyst",
+      "company": "Independent / Client Projects",
+      "location": "Remote",
+      "startDate": "2024-01-01",
+      "endDate": "Present",
+      "current": true,
+      "description": "Dashboards. Reporting. Decision support."
+    }
+  ],
+  "education": [
+    {
+      "school": "Data Analytics / Business Intelligence focus",
+      "degree": "Self-directed learning and portfolio projects",
+      "field": "Analytics & Decision Support",
+      "startDate": "2023-01-01",
+      "endDate": "Present",
+      "description": "Business analysis. Dashboarding. Practical reporting."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Data Analytics Fundamentals",
+      "issuer": "Professional learning track",
+      "date": "2025-01-15",
+      "credentialUrl": ""
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Project Stakeholder",
+      "role": "Operations Lead",
+      "quote": "Kennedy translated a messy reporting process into something clear, actionable, and easy to trust.",
+      "approved": true
+    }
+  ],
+  "siteSettings": {
+    "siteName": "Kennedy Portfolio",
+    "tagline": "Turning data into action.",
+    "heroCtaPrimary": "View my work",
+    "heroCtaSecondary": "Contact me",
+    "heroPrimaryLink": "#work",
+    "heroSecondaryLink": "/contact",
+    "footerText": "© 2026 Kennedy",
+    "showTestimonials": true,
+    "showBlog": false,
+    "hireMeEnabled": true,
+    "defaultTheme": "light"
+  }
+}
