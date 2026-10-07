@@ -34,27 +34,27 @@ export default async function ProjectPage({
   }
 
   return (
-    <main className="mx-auto max-w-4xl px-6 py-16 text-neutral-900 dark:text-white">
+    <main className="mx-auto w-full min-w-0 max-w-4xl px-6 py-16 text-neutral-900 dark:text-white">
       <div className="mb-8">
-        <Link href="/" className="text-sm font-medium uppercase tracking-[0.2em] text-[#67635f] transition-opacity hover:opacity-80 dark:text-neutral-300">
+        <Link href="/" className="text-sm font-medium uppercase tracking-[0.2em] text-[#111111] transition-opacity hover:opacity-80">
           ← Back home
         </Link>
       </div>
 
-      <article className="glass-panel rounded-4xl p-6 sm:p-8">
-        <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-[#67635f] dark:text-neutral-300">
+      <article className="glass-panel min-w-0 rounded-4xl p-6 sm:p-8">
+        <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-[#111111]">
           {project.category}
         </p>
-        <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[#17171a] dark:text-white">
+        <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[#111111]">
           {project.title}
         </h1>
 
-        <p className="mt-5 max-w-2xl text-base leading-7 text-[#4d4b49] dark:text-neutral-300">
+        <p className="mt-5 max-w-2xl text-base leading-7 text-[#111111]">
           {project.description}
         </p>
 
         <div className="mt-8">
-          <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#67635f] dark:text-neutral-300">Project visuals</p>
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#111111]">Project visuals</p>
           <div className="mt-4 overflow-hidden rounded-[1.5rem] border border-black/10 dark:border-white/10">
             <ProjectVisual project={project} />
           </div>
@@ -64,37 +64,37 @@ export default async function ProjectPage({
           {project.tools.map((tool) => (
             <span
               key={tool}
-              className="rounded-full border border-[#e9dfd6] bg-[#f9f4f0] px-2.5 py-1 text-[11px] text-[#4d4b49] dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
+              className="rounded-full border border-[#e9dfd6] bg-[#f9f4f0] px-2.5 py-1 text-[11px] text-[#111111] dark:border-neutral-700 dark:bg-neutral-900 dark:text-white"
             >
               {tool}
             </span>
           ))}
         </div>
 
-        <div className="mt-10 grid gap-8 md:grid-cols-3">
-          <div className="rounded-2xl border border-[#e9dfd6] bg-[#f7f1ea]/80 p-5 dark:border-neutral-800 dark:bg-neutral-900/70">
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#67635f] dark:text-neutral-300">
+        <div className="project-detail-outcomes">
+          <div className="project-detail-outcome">
+            <p className="project-detail-label">
               Problem
             </p>
-            <p className="mt-4 text-sm leading-6 text-[#4d4b49] dark:text-neutral-300">
+            <p className="project-detail-copy">
               {project.problem}
             </p>
           </div>
 
-          <div className="rounded-2xl border border-[#e9dfd6] bg-[#f7f1ea]/80 p-5 dark:border-neutral-800 dark:bg-neutral-900/70">
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#67635f] dark:text-neutral-300">
+          <div className="project-detail-outcome">
+            <p className="project-detail-label">
               Approach / How I Built It
             </p>
-            <p className="mt-4 text-sm leading-6 text-[#4d4b49] dark:text-neutral-300">
+            <p className="project-detail-copy">
               {project.approach}
             </p>
           </div>
 
-          <div className="rounded-2xl border border-[#e9dfd6] bg-[#f7f1ea]/80 p-5 dark:border-neutral-800 dark:bg-neutral-900/70">
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#67635f] dark:text-neutral-300">
+          <div className="project-detail-outcome">
+            <p className="project-detail-label">
               Output / Result
             </p>
-            <p className="mt-4 text-sm leading-6 text-[#4d4b49] dark:text-neutral-300">
+            <p className="project-detail-copy">
               {project.outcome}
             </p>
           </div>

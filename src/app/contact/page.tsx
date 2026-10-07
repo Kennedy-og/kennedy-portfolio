@@ -21,7 +21,7 @@ export default async function ContactPage({
 
   return (
     <main className="contact-page min-h-screen bg-background px-6 py-16 text-foreground">
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto min-w-0 max-w-5xl">
       <div className="mb-10 flex flex-col items-start justify-between gap-5 sm:flex-row sm:items-center">
         <div>
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#6e6e73] dark:text-neutral-300">
@@ -36,12 +36,12 @@ export default async function ContactPage({
         </Link>
       </div>
 
-      <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
-        <aside className="glass-panel rounded-3xl p-6 sm:p-7">
+      <div className="grid min-w-0 gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
+        <aside className="glass-panel min-w-0 rounded-3xl p-6 sm:p-7">
           <h2 className="text-xl font-semibold text-neutral-900 dark:text-neutral-50">Reach me</h2>
           <ul className="mt-5 space-y-3 text-sm text-[#6e6e73] dark:text-neutral-300">
             <li>
-              <a href={`mailto:${data.profile.email}`} className="inline-flex min-h-11 items-center gap-3 rounded-xl border border-black/10 bg-white/60 px-3 py-2 font-medium text-neutral-900 transition-colors hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900/30 focus-visible:ring-offset-2 dark:border-white/10 dark:bg-neutral-900/60 dark:text-neutral-100 dark:hover:bg-neutral-800 dark:focus-visible:ring-white/30 dark:focus-visible:ring-offset-neutral-900">
+              <a href={`mailto:${data.profile.email}`} className="inline-flex min-h-11 min-w-0 max-w-full flex-wrap break-all items-center gap-3 rounded-xl border border-black/10 bg-white/60 px-3 py-2 font-medium text-neutral-900 transition-colors hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900/30 focus-visible:ring-offset-2 dark:border-white/10 dark:bg-neutral-900/60 dark:text-neutral-100 dark:hover:bg-neutral-800 dark:focus-visible:ring-white/30 dark:focus-visible:ring-offset-neutral-900">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" aria-hidden="true">
                   <path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5v-9Z" />
                   <path d="m5 7 7 6 7-6" />
@@ -80,7 +80,7 @@ export default async function ContactPage({
           </ul>
         </aside>
 
-        <form action={submitContactAction} className="glass-panel rounded-3xl p-6 sm:p-7">
+        <form action={submitContactAction} className="glass-panel min-w-0 rounded-3xl p-6 sm:p-7">
           <div className="grid gap-5 md:grid-cols-2">
             <div>
               <label htmlFor="name" className="mb-2 block text-sm font-medium text-[#6e6e73] dark:text-neutral-300">Name</label>

@@ -13,7 +13,7 @@ export default async function ResumePage() {
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-16 text-neutral-900 dark:text-white">
-      <div className="mb-10 flex items-center justify-between gap-4">
+      <div className="mb-10 flex flex-col items-start justify-between gap-5 sm:flex-row sm:items-center">
         <div>
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#67635f] dark:text-neutral-300">Resume</p>
           <h1 className="mt-3 text-4xl font-semibold tracking-tight text-[#17171a] dark:text-white">Professional overview</h1>
@@ -38,7 +38,7 @@ export default async function ResumePage() {
           <div className="rounded-2xl border border-[#e9dfd6] bg-[#f7f1ea]/80 p-5 dark:border-neutral-800 dark:bg-neutral-900/70">
             <h2 className="text-lg font-semibold text-[#17171a] dark:text-white">Contact</h2>
             <ul className="mt-4 space-y-2 text-sm text-[#4d4b49] dark:text-neutral-300">
-              <li>Email: {data.contact.email}</li>
+              <li>Email: <span className="break-all">{data.contact.email}</span></li>
               <li>Location: {data.contact.location}</li>
               <li>Availability: {data.profile.availability}</li>
             </ul>

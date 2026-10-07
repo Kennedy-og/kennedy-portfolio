@@ -293,6 +293,15 @@ export default function AdminDashboard({ initialData }: AdminDashboardProps) {
                   <label className="text-sm font-medium text-white md:col-span-2">Description
                     <textarea value={project.description} onChange={(e) => updateProject(index, "description", e.target.value)} className="admin-field mt-2 min-h-[110px] w-full rounded-xl px-3 py-2.5 text-sm outline-none" />
                   </label>
+                  <label className="text-sm font-medium text-white md:col-span-2">Problem
+                    <textarea value={project.problem || ""} onChange={(e) => updateProject(index, "problem", e.target.value)} className="admin-field mt-2 min-h-[110px] w-full rounded-xl px-3 py-2.5 text-sm outline-none" />
+                  </label>
+                  <label className="text-sm font-medium text-white md:col-span-2">Approach / How I Built It
+                    <textarea value={project.approach || ""} onChange={(e) => updateProject(index, "approach", e.target.value)} className="admin-field mt-2 min-h-[110px] w-full rounded-xl px-3 py-2.5 text-sm outline-none" />
+                  </label>
+                  <label className="text-sm font-medium text-white md:col-span-2">Output / Result
+                    <textarea value={project.outcome || ""} onChange={(e) => updateProject(index, "outcome", e.target.value)} className="admin-field mt-2 min-h-[110px] w-full rounded-xl px-3 py-2.5 text-sm outline-none" />
+                  </label>
                   <label className="text-sm font-medium text-white">Live URL
                     <input value={project.liveUrl || ""} onChange={(e) => updateProject(index, "liveUrl", e.target.value)} className="admin-field mt-2 w-full rounded-xl px-3 py-2.5 text-sm outline-none" />
                   </label>

@@ -202,7 +202,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(16, 18, 19, 0.58) 0%, rgba(16, 18, 19, 0.4) 38%, rgba(16, 18, 19, 0.16) 72%, rgba(16, 18, 19, 0.08) 100%);
+  background: linear-gradient(90deg, rgba(16, 18, 19, 0.44) 0%, rgba(16, 18, 19, 0.32) 38%, rgba(16, 18, 19, 0.14) 72%, rgba(16, 18, 19, 0.08) 100%);
   z-index: 1;
 }
 
@@ -214,7 +214,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  filter: blur(2.4px) grayscale(0.22) brightness(0.8);
+  filter: blur(2.4px) grayscale(0.22) brightness(0.92);
   transform: scale(1.06);
   z-index: 0;
 }
@@ -593,6 +593,38 @@ body {
   color: var(--ka-ink);
 }
 
+.project-detail-outcomes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: clamp(14px, 2vw, 24px);
+  margin-top: 40px;
+}
+
+.project-detail-outcome {
+  min-width: 0;
+  padding: clamp(20px, 2.4vw, 30px);
+  border: 1px solid var(--ka-line);
+  border-radius: var(--ka-radius-md);
+  background: color-mix(in srgb, var(--ka-paper) 72%, white);
+}
+
+.project-detail-label {
+  color: #111111;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.project-detail-copy {
+  margin-top: 20px;
+  color: #111111;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
 .dark-section {
   background: var(--ka-dark);
   color: #f2f3f1;
@@ -869,17 +901,36 @@ body {
   transform: translateY(0);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 850px) {
+  .project-detail-outcomes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
   .editorial-nav-wrap {
     padding: 12px 18px;
   }
 
   .editorial-nav {
     grid-template-columns: 1fr auto;
+    row-gap: 2px;
+    padding-bottom: 4px;
   }
 
   .nav-links {
-    display: none;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0 12px;
+  }
+
+  .nav-links a {
+    display: inline-flex;
+    min-height: 40px;
+    align-items: center;
   }
 
   .editorial-hero {
@@ -889,12 +940,16 @@ body {
 
   .hero-grid {
     grid-template-columns: 1fr;
-    padding: 70px 0 80px;
+    padding: clamp(48px, 8vw, 70px) 0 clamp(56px, 9vw, 80px);
   }
 
   .hero-media {
     width: min(100%, 620px);
     justify-self: end;
+  }
+
+  .editorial-hero::after {
+    background-position: 58% center;
   }
 
   .section-intro-split,
@@ -922,8 +977,23 @@ body {
 }
 
 @media (max-width: 640px) {
+  .project-detail-outcomes {
+    grid-template-columns: 1fr;
+    margin-top: 32px;
+  }
+
   .brand-mark {
     font-size: 9px;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+    column-gap: clamp(10px, 4vw, 20px);
+  }
+
+  .nav-links a {
+    font-size: 9px;
+    letter-spacing: .12em;
   }
 
   .nav-contact {
@@ -931,12 +1001,12 @@ body {
   }
 
   .hero-heading {
-    font-size: clamp(4rem, 18vw, 6.5rem);
+    font-size: clamp(3rem, 13vw, 6.5rem);
   }
 
   .hero-grid {
-    padding: 55px 0 65px;
-    gap: 48px;
+    padding: clamp(44px, 12vw, 70px) 0 clamp(48px, 14vw, 65px);
+    gap: clamp(36px, 10vw, 48px);
   }
 
   .hero-media {
@@ -945,11 +1015,11 @@ body {
   }
 
   .editorial-section {
-    padding: 90px 5vw;
+    padding: clamp(72px, 18vw, 90px) 5vw;
   }
 
   .display-heading {
-    font-size: clamp(3.1rem, 15vw, 5rem);
+    font-size: clamp(2.75rem, 12vw, 5rem);
   }
 
   .project-meta-row {
@@ -961,7 +1031,7 @@ body {
   }
 
   .project-visual {
-    min-height: 330px;
+    min-height: clamp(240px, 75vw, 330px);
     border-radius: var(--ka-radius-md);
   }
 
@@ -976,7 +1046,7 @@ body {
   }
 
   .capability-title {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 8vw, 2rem);
   }
 
   .capability-row.is-open .capability-panel-inner {
@@ -989,11 +1059,11 @@ body {
   }
 
   .contact-section {
-    padding: 90px 5vw 50px;
+    padding: clamp(72px, 16vw, 90px) 5vw clamp(40px, 12vw, 50px);
   }
 
   .contact-section h2 {
-    font-size: clamp(3.7rem, 18vw, 6rem);
+    font-size: clamp(2.7rem, 13vw, 6rem);
   }
 
   .editorial-footer {
