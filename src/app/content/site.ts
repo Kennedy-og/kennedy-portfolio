@@ -4,7 +4,7 @@
 export const profile = {
   name: "Kennedy",
   kicker: "Data Analytics",
-  headline: "I turn data into decisions.",
+  headline: "Its All About The Insights",
   bio: "",
   photo: "/images/headshot.webp",
   heroPhoto: "/images/headshot.webp",

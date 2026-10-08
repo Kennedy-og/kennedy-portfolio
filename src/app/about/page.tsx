@@ -17,7 +17,7 @@ export default async function AboutPage() {
         <div>
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#67635f] dark:text-neutral-300">About</p>
           <h1 className="mt-3 text-4xl font-semibold tracking-tight text-[#17171a] dark:text-white">
-            {data.profile.headline}
+            I turn data into decisions.
           </h1>
         </div>
         <Link href="/" className="rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-medium text-[#17171a] transition hover:-translate-y-0.5 dark:border-white/10 dark:bg-neutral-900 dark:text-white">

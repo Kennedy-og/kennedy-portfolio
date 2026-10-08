@@ -71,7 +71,7 @@ export default async function Home() {
           <Reveal>
             <div className="section-intro section-intro-split">
               <div>
-                <p className="eyebrow">01 / Selected work</p>
+                <p className="eyebrow">Selected work</p>
                 <h2 id="work-heading" className="display-heading">Work that turns<br />data into direction.</h2>
               </div>
               <p className="section-lead">
@@ -85,7 +85,6 @@ export default async function Home() {
               <Reveal key={project.id} delay={index * 70}>
                 <article className="project-entry">
                   <div className="project-meta-row">
-                    <span className="project-number">{String(index + 1).padStart(2, "0")}</span>
                     <span>{project.category}</span>
                     <span>{project.date}</span>
                   </div>
@@ -113,7 +112,7 @@ export default async function Home() {
           <Reveal>
             <div className="section-intro section-intro-split dark-intro">
               <div>
-                <p className="eyebrow">02 / What I work with</p>
+                <p className="eyebrow">What I work with</p>
                 <h2 id="capabilities-heading" className="display-heading">Capabilities,<br />kept practical.</h2>
               </div>
               <p className="section-lead">
@@ -131,7 +130,7 @@ export default async function Home() {
             <div className="experience-watermark" aria-hidden="true">EXPERIENCE</div>
             <div className="experience-content">
               <div>
-                <p className="eyebrow">03 / Experience</p>
+                <p className="eyebrow">Experience</p>
                 <h2 id="experience-heading" className="display-heading">Experience<br />through practice.</h2>
               </div>
               <div className="experience-list">
@@ -158,11 +157,11 @@ export default async function Home() {
           <Reveal>
             <div className="about-grid">
               <div>
-                <p className="eyebrow">04 / About</p>
+                <p className="eyebrow">About</p>
                 <h2 id="about-heading" className="display-heading">A practical approach<br />to analytical work.</h2>
               </div>
               <div className="about-copy">
-                <p>{data.profile.headline}</p>
+                <p>I turn data into decisions.</p>
                 <p>{data.experience[0]?.description ?? data.siteSettings.tagline}</p>
                 <p>{data.education[0]?.description ?? "Focused on practical analytical workflows."}</p>
               </div>
@@ -172,7 +171,7 @@ export default async function Home() {
 
         <section id="contact" className="contact-section" aria-labelledby="contact-heading">
           <Reveal>
-            <p className="eyebrow">05 / Contact</p>
+            <p className="eyebrow">Contact</p>
             <h2 id="contact-heading">LET&apos;S TURN<br />DATA INTO DECISIONS.</h2>
             <div className="contact-bottom">
               <p>{data.profile.availability}</p>
